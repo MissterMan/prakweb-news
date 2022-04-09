@@ -4,6 +4,7 @@ body {
   padding: 0;
   font-family: "Nunito", sans-serif;
   background-color: #fafafa;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -229,7 +230,7 @@ p {
 
 .sidebar__content {
   width: auto;
-  margin: 50px 50px;
+  margin: 50px 40px;
 }
 
 .sidebar__searchbar {
@@ -294,6 +295,14 @@ p {
   transition: 300ms;
 }
 
+.page__number {
+  background-color: salmon;
+  padding: 20px;
+  width: fit-content;
+  border-radius: 100px;
+  display: block;
+}
+
 .sidebar__news a:hover {
   background-color: #ff5d4a;
   transition: 300ms;
@@ -326,6 +335,19 @@ p {
 
   .navbar__dropdown--content {
     left: 0px;
+  }
+
+  .home__content {
+    width: 100%;
+  }
+
+  .home__sidebar {
+    display: none;
+  }
+
+  .news__tag-list {
+    display: flex;
+    flex-direction: column;
   }
 }
 
