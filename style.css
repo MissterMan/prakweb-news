@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Nunito", sans-serif;
+  background-color: #fafafa;
 }
 
 h1,
@@ -106,7 +107,6 @@ p {
 .navbar__dropdown:hover .navbar__dropdown--content {
   display: block;
 }
-
 .hidden {
   display: none;
 }
@@ -134,17 +134,27 @@ p {
   margin-top: 70px;
   display: flex;
   position: relative;
+  height: 100%;
 }
 
 .home__content {
-  width: 70%;
+  width: 60%;
   margin: 50px 40px;
 }
 
 .home__news {
   margin: 30px 0px;
-  background-color: aliceblue;
   padding: 25px;
+  border: 1px solid #efefef;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0;
+  transition: box-shadow 0.3s;
+}
+
+.home__news:hover {
+  transition-duration: 0.3s;
+  box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 0.15);
 }
 
 .news__title {
@@ -166,29 +176,73 @@ p {
 }
 
 .home__sidebar {
-  background-color: #0f172a;
-  width: fit-content;
-  height: 530px;
-  position: fixed;
+  width: 400px;
+  height: auto;
   right: 0px;
-  margin: 20px;
   border-radius: 4px;
+  border-left: 1px solid #ececec;
 }
 
 .sidebar__content {
-  padding: 10px;
+  width: auto;
+  margin: 50px 50px;
 }
 
 .sidebar__searchbar {
-  width: max-content;
+  width: 100%;
   background-color: white;
   border: 1px solid #ececec;
-  height: 20px;
-  padding: 5px 10px;
-  border-radius: 10px;
+  height: 30px;
+  padding: 5px 20px;
+  border-radius: 50px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+}
+
+.sidebar__searchbar:hover {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar__searchbar:focus {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.sidebar__news-content {
+  margin: 20px 0px;
+  padding: 20px;
+  height: fit-content;
+  width: 100%;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #ececec;
+}
+
+.sidebar__news p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.sidebar__news a {
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+  border-radius: 50px;
+  width: fit-content;
+  padding: 6px 20px;
+  background-color: salmon;
+}
+
+.sidebar__news a:hover {
+  background-color: #ff5d4a;
 }
 
 .footer {
+  position: relative;
   background-color: #0f172a;
 }
 
@@ -215,4 +269,16 @@ p {
   .navbar__dropdown--content {
     left: 0px;
   }
+}
+
+.dark {
+  background-color: #0f172a;
+}
+
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
 }
