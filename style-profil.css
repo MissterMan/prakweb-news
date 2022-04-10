@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Clash Display", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar__content {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 50px;
+}
+
+.navbar__brand {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.navbar__list {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.navbar__list a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-size: 44px;
+}
+
+.hero {
+  width: 100%;
+}
+
+.hero__content {
+  background-color: #f8cf3e;
+  margin: 50px 100px;
+  border-radius: 30px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.profile__image {
+  height: 350px;
+}
+
+.profile__text {
+  width: 480px;
+}
+
+.profile__title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.profile__about {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-top: 10px;
+  text-align: justify;
+}

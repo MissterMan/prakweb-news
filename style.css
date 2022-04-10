@@ -151,7 +151,7 @@ p {
 .home__news {
   margin: 30px 0px;
   padding: 25px;
-  border: 1px solid #efefef;
+  /* border: 1px solid #efefef; */
   background-color: white;
   border-radius: 6px;
   box-shadow: 0;
@@ -236,7 +236,8 @@ p {
 .sidebar__searchbar {
   width: 100%;
   background-color: white;
-  border: 1px solid #ececec;
+  /* border: 1px solid #ececec; */
+  border: none;
   height: 30px;
   padding: 5px 20px;
   border-radius: 50px;
@@ -257,6 +258,8 @@ p {
 
 .latest__news-text {
   margin-top: 20px;
+  font-size: 24px;
+  font-weight: 900;
 }
 
 .sidebar__news-content {
@@ -266,7 +269,6 @@ p {
   width: 100%;
   background-color: white;
   border-radius: 6px;
-  border: 1px solid #ececec;
   transition: 300ms;
 }
 
