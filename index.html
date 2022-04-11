@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar__content">
             <h2 class="navbar__brand">Beri<span class="span__color">.</span>ta 📰</h2>
@@ -33,15 +34,17 @@
                     </div>
                 </div>
             </ul>
+            <!-- Hamburger -->
             <div class="hamburger">
                 <div class="hamburger__line" href=""></div>
                 <div class="hamburger__line" href=""></div>
                 <div class="hamburger__line" href=""></div>
             </div>
         </div>
+        <!-- Mobile View -->
         <ul id="mobile__dropdown" class="navbar__list--mobile">
-            <a class="navbar__li-mobile" href="#">Home</a></li>
-            <a class="navbar__li-mobile" href="#">Profil</a></li>
+            <a class="navbar__li-mobile" href="#">Home 🏠</a></li>
+            <a class="navbar__li-mobile" href="#">Profil 🧑</a></li>
             <div class="navbar__dropdown">
                 <a id="toogleDropMobile" class="navbar__li-mobile" href="#">Kategori 📃</a>
                 <div id="dropdownContentMobile" class="navbar__dropdown--content">
@@ -53,8 +56,11 @@
             </div>
         </ul>
     </nav>
+    <!-- Navbar End -->
 
+    <!-- Homepage -->
     <div class="home">
+        <!-- Main Home Content -->
         <div class="home__content">
             <h2 class="news__popular-text">Latest Beri<span class="span__color">.</span>ta 🤙</h2>
             <div class="home__news-list">
@@ -133,8 +139,10 @@
                 </div>
             </div>
 
+            <!-- Pagination -->
             <div class="pagination">
-                <a href="" class="page__arrow-left"></a>
+                <a href="" class="page__arrow-left"><i class="material-icons">
+                        arrow_back_ios </i></a>
                 <div class="pagination__number">
                     <a href="" class="page__number">1</a>
                     <a href="" class="page__number">2</a>
@@ -143,20 +151,22 @@
                     <a href="" class="page__number">5</a>
                     <a href="" class="page__number">...</a>
                 </div>
-                <a href="" class="page__arrow-right"></a>
+                <a href="" class="page__arrow-right"><i class="material-icons">
+                        arrow_forward_ios </i></a>
             </div>
-
+            <!-- Pagination End -->
         </div>
+        <!-- Home Content End -->
 
+        <!-- Home Sidebar -->
         <div class="home__sidebar">
             <div class="sidebar__content">
                 <form action="">
                     <input id="search" class="sidebar__searchbar" placeholder="Cari Berita... 🔍" autocomplete="off"
                         type="text">
                 </form>
-
                 <h3 class="latest__news-text">Popular Beri<span class="span__color">.</span>ta 🔥</h3>
-
+                <!-- News List -->
                 <div class="sidebar__news">
                     <div class="sidebar__news-content">
                         <h3 class="latest__news-title">Judul Berita</h3>
@@ -191,6 +201,7 @@
                 </div>
             </div>
         </div>
+        <!-- Sidebar End -->
     </div>
 
     <script src="script.js"></script>
