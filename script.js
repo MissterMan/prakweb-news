@@ -6,6 +6,12 @@ toogleHamburger.addEventListener("click", function () {
 
 const toogleDrop = document.querySelector("#toogleDrop");
 toogleDrop.addEventListener("click", function () {
-  const dropdownContent = document.getElementById("dropdown-content");
+  const dropdownContent = document.querySelector("#dropdown-content");
   dropdownContent.classList.toggle("block");
+});
+
+const toogleDropMobile = document.getElementById("toogleDropMobile");
+toogleDropMobile.addEventListener("click", function () {
+  const dropdownMobile = document.getElementById("dropdownContentMobile");
+  dropdownMobile.classList.toggle("block");
 });
