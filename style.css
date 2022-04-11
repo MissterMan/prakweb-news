@@ -53,7 +53,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 40px;
+  padding: 20px 40px;
 }
 
 .navbar__list {
@@ -73,29 +73,31 @@ p {
   display: block;
 }
 
+.navbar__dropdown {
+  position: relative;
+}
+
 .navbar__listdrop {
   text-decoration: none;
   color: black;
   font-weight: bold;
   display: block;
-  margin-bottom: 10px;
+  padding: 20px 35px;
+  transition: 300ms;
 }
 
 .navbar__listdrop:hover {
-  font-weight: 900;
+  background-color: #ff5d4a;
+  color: white;
+  transition: 300ms;
 }
 
 .navbar__li:hover {
   font-weight: 900;
 }
 
-.navbar__dropdown {
-  position: relative;
-}
-
 .navbar__dropdown--content {
   z-index: 10;
-  padding: 20px;
   border-radius: 4px;
   display: none;
   position: absolute;
@@ -321,12 +323,14 @@ p {
   padding: 20px 25px;
   border-radius: 100px;
   display: block;
+  transition: 300ms;
 }
 
 .page__number:hover {
   font-weight: bold;
   color: white;
   background-color: #ff5d4a;
+  transition: 300ms;
 }
 
 .page__arrow-left {
