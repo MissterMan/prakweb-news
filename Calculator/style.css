@@ -1,0 +1,101 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    #e9d5da,
+    #827397,
+    #4d4c7d,
+    #363062
+  );
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+button {
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  border: none;
+  transition: 0.2s;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #ececec;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.05);
+  transition: 0.2s;
+}
+
+.cal__body {
+  align-items: center;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(222, 222, 222, 0.75),
+    rgba(202, 202, 202, 0.75),
+    rgba(210, 210, 210, 0.75)
+  );
+  height: fit-content;
+  width: fit-content;
+  border-radius: 10px;
+  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cal__output {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.cal__output .prev__number {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.cal__output .current__number {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.cal__screen:focus {
+  border: none;
+}
+
+.cal__number {
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.button__sum {
+  grid-row: span 2;
+  height: 100%;
+}
+
+.button__equal {
+  width: 100%;
+  background-color: #ff5454;
+}
+.button__equal:hover {
+  background-color: #ff4545;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.5);
+}
